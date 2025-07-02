@@ -15,6 +15,7 @@ export OPENAI_API_KEY="$(cat $HOME/.api_key_openai_1 2>/dev/null || echo '')"
 
 ## Usage
 
+0. `git clone` this repo to your computer, then `cd` into your local repo.
 1. Make file `call_chatgpt_api.py` executable by running: `chmod u+x call_chatgpt_api.py`
 2. Start the program by running: `./call_chatgpt_api.py`
 3. You can change model by running: `./call_chatgpt_api.py -m gpt-4.1`; available
