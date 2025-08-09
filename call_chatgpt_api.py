@@ -117,8 +117,20 @@ def start_chat(model: str):
 
         except Exception as e:
             spinner.stop()  # Always stop spinner on error
-            print(f"Error: {e}")
-            print("######\n")
+            response = client.responses.create(
+                model=model,
+                input=full_input
+            )
+            print(f'ChatGPT: {response.output_text}\n######\n')
+
+            response_msg = {
+                "role": "assistant",
+                "content": [
+                    {"type": "output_text",
+                    "text": response.output_text}
+                ]
+            }
+            full_input.append(response_msg)
 
 if __name__ == '__main__':
     start_chat(model=args.model)
