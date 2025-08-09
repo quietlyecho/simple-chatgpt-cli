@@ -12,6 +12,7 @@ This is a simple CLI program to use ChatGPT.
 ```
 export OPENAI_API_KEY="$(cat $HOME/.api_key_openai_1 2>/dev/null || echo '')"
 ```
+5. Remember to source the API key: `source ~/.zshrc` or `source ~/.bashrc`
 
 ## Usage
 
