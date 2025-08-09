@@ -95,7 +95,7 @@ def start_chat(model: str):
             "content": user_prompt
         })
 
-        spinner = ThinkingSpinner("Processing...")
+        spinner = ProcessSpinner("Processing...")
 
         try:
             print()  # New line before spinner
