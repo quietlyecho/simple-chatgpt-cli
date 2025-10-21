@@ -45,7 +45,7 @@ class ProcessSpinner:
 parser = argparse.ArgumentParser()
 parser.add_argument("-m", "--model", type=str,
                     help="Name of the model to use",
-                    default="gpt-4")  # Fixed default model name
+                    default="gpt-5")  # Fixed default model name
 args = parser.parse_args()
 
 def stream_response(response_stream, spinner):
