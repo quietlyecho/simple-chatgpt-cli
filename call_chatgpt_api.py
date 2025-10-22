@@ -116,11 +116,11 @@ def start_chat(model: str):
             })
 
         except Exception as e:
-            spinner.stop()  # Always stop spinner on error
             response = client.responses.create(
                 model=model,
                 input=full_input
             )
+            spinner.stop()  # Always stop spinner on error
             print(f'ChatGPT: {response.output_text}\n######\n')
 
             response_msg = {
