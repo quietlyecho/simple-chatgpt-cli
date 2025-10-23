@@ -23,11 +23,11 @@ class ProviderFactory:
     PROVIDERS = {
         "chatgpt": {
             "class": ChatGPTProvider,
-            "default_model": "gpt-4o"
+            "default_model": "gpt-5"
         },
         "claude": {
             "class": ClaudeProvider,
-            "default_model": "claude-sonnet-4-20250514"
+            "default_model": "claude-sonnet-4-5-20250929" 
         }
     }
 
